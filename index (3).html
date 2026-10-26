@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraAI — Modern AI Automation SaaS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <style>
+      :root { color-scheme: light; }
+      body { background: #ffffff; }
+      ::selection { background: #d9f99d; color: #4c1d95; }
+    </style>
+</head>
+<body class="bg-[#FCFDF9] text-slate-700 antialiased selection:bg-lime-300 selection:text-violet-950">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-100/90 backdrop-blur-md border-b border-violet-100/80">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-lime-300 to-violet-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-violet-500/20">A</div>
+                <span class="text-slate-950 font-semibold text-lg tracking-tight">AuraAI</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm text-slate-500 font-medium">
+                <a href="#features" class="hover:text-violet-700 transition">Features</a>
+                <a href="#demo" class="hover:text-violet-700 transition">Product</a>
+                <a href="#pricing" class="hover:text-violet-700 transition">Pricing</a>
+            </div>
+            <div>
+                <a href="#waitlist" class="px-4 py-2 text-sm font-medium text-white bg-violet-50 hover:bg-lime-100 border border-violet-200 rounded-lg transition shadow-sm">Join Waitlist</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 max-w-5xl mx-auto text-center relative overflow-hidden bg-slate-100">
+        <!-- Background Radial Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-gradient-to-r from-lime-300/30 to-violet-400/20 blur-[120px] pointer-events-none rounded-full"></div>
+
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-lime-100/80 border border-lime-300/70 text-xs text-violet-700 font-medium mb-8">
+            <span class="w-2 h-2 rounded-full bg-lime-400 animate-pulse"></span>
+            <span>AuraAI v2.0 is Live</span>
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-bold text-slate-950 tracking-tight leading-tight mb-6">
+            Build and Deploy AI Workflows <br class="hidden sm:inline" />
+            <span class="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-lime-500 bg-clip-text text-transparent">In Seconds, Not Weeks</span>
+        </h1>
+
+        <p class="text-base md:text-lg text-slate-600 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+            A minimal, ultra-fast automation suite designed for modern engineering teams. Automate data extraction, model execution, and webhooks with zero friction.
+        </p>
+
+        <!-- CTA Form -->
+        <div id="waitlist" class="max-w-md mx-auto flex flex-col sm:flex-row items-center gap-3">
+            <input type="email" placeholder="Enter your work email" class="w-full px-4 py-3 bg-slate-100 border border-violet-200 rounded-lg text-white text-sm focus:outline-none focus:border-violet-500 transition placeholder:text-slate-400">
+            <button class="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-violet-600 to-violet-500 hover:from-violet-700 hover:to-lime-500 text-white font-medium text-sm rounded-lg whitespace-nowrap transition shadow-lg shadow-violet-500/25">
+                Get Early Access
+            </button>
+        </div>
+        <p class="text-xs text-slate-500 mt-3">Free 14-day trial • No credit card required</p>
+
+        <!-- Product Preview Card Mockup -->
+        <div id="demo" class="mt-16 rounded-xl border border-violet-100 bg-violet-50/60 p-3 shadow-2xl backdrop-blur-sm">
+            <div class="rounded-lg bg-slate-100 border border-violet-200/80 p-6 text-left">
+                <div class="flex items-center justify-between pb-4 border-b border-violet-100/80 mb-6">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                    </div>
+                    <span class="text-xs font-mono text-violet-500">pipeline.config.json</span>
+                </div>
+                <div class="space-y-3 font-mono text-xs text-slate-400">
+                    <p class="text-lime-600">// Automatic AI Data Pipeline</p>
+                    <p><span class="text-violet-600">const</span> pipeline = <span class="text-violet-600">new</span> AuraPipeline({ <span class="text-slate-700">model: "aura-v2-turbo"</span> });</p>
+                    <p><span class="text-violet-600">await</span> pipeline.execute({ <span class="text-slate-700">stream: true</span> });</p>
+                    <div class="p-3 rounded bg-lime-50/80 border border-violet-100 text-slate-700 font-sans text-xs flex justify-between items-center mt-4">
+                        <span>Status: <span class="text-violet-600 font-medium">Pipeline Executed in 12ms</span></span>
+                        <span class="text-violet-500">200 OK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bento Grid Section -->
+    <section id="features" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3">Designed for speed & clarity</h2>
+            <p class="text-slate-400 text-sm max-w-xl mx-auto">Everything you need to launch AI-driven infrastructure without managing servers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Feature 1 -->
+            <div class="p-6 rounded-xl bg-slate-100/90 border border-violet-100/80 hover:border-lime-400 transition">
+                <div class="w-10 h-10 rounded-lg bg-lime-100 border border-lime-300/70 text-violet-600 flex items-center justify-center mb-5 font-semibold">⚡</div>
+                <h3 class="text-slate-950 font-semibold text-base mb-2">Ultra Low Latency</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Edge-deployed API infrastructure ensures sub-50ms execution times worldwide.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="p-6 rounded-xl bg-slate-100/90 border border-violet-100/80 hover:border-lime-400 transition">
+                <div class="w-10 h-10 rounded-lg bg-violet-100 border border-violet-200 text-violet-600 flex items-center justify-center mb-5 font-semibold">🛡️</div>
+                <h3 class="text-slate-950 font-semibold text-base mb-2">Enterprise Security</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">SOC2 Type II certified with end-to-end data encryption and strict privacy controls.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="p-6 rounded-xl bg-slate-100/90 border border-violet-100/80 hover:border-lime-400 transition">
+                <div class="w-10 h-10 rounded-lg bg-lime-100 border border-lime-300 text-violet-600 flex items-center justify-center mb-5 font-semibold">🔄</div>
+                <h3 class="text-slate-950 font-semibold text-base mb-2">Seamless Webhooks</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Connect to Slack, Notion, GitHub, and custom databases in two clicks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-6 max-w-5xl mx-auto border-t border-violet-100/80">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3">Simple, transparent pricing</h2>
+            <p class="text-slate-400 text-sm">Start free, scale as your automation grows.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <!-- Starter Plan -->
+            <div class="p-8 rounded-xl bg-white border border-violet-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-slate-950 font-semibold text-lg mb-2">Starter</h3>
+                    <p class="text-xs text-slate-400 mb-6">Perfect for side projects and individual developers.</p>
+                    <div class="text-3xl font-bold text-slate-950 mb-6">$19 <span class="text-xs font-normal text-slate-500">/ month</span></div>
+                    <ul class="space-y-3 text-xs text-slate-700 mb-8">
+                        <li class="flex items-center"><span class="text-violet-600 mr-2">✓</span> 10,000 AI Executions / mo</li>
+                        <li class="flex items-center"><span class="text-violet-600 mr-2">✓</span> 3 Active Workflows</li>
+                        <li class="flex items-center"><span class="text-violet-600 mr-2">✓</span> Community Support</li>
+                    </ul>
+                </div>
+                <button class="w-full py-2.5 bg-violet-100 hover:bg-lime-200 text-white text-xs font-medium rounded-lg transition border border-violet-200">Join Starter</button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="p-8 rounded-xl bg-violet-50/70 border border-violet-400/60 flex flex-col justify-between relative shadow-xl shadow-violet-500/10">
+                <div class="absolute -top-3 right-6 bg-gradient-to-r from-violet-600 to-violet-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Most Popular</div>
+                <div>
+                    <h3 class="text-slate-950 font-semibold text-lg mb-2">Pro Team</h3>
+                    <p class="text-xs text-slate-400 mb-6">For scaling startups and automated workflows.</p>
+                    <div class="text-3xl font-bold text-slate-950 mb-6">$49 <span class="text-xs font-normal text-slate-500">/ month</span></div>
+                    <ul class="space-y-3 text-xs text-slate-700 mb-8">
+                        <li class="flex items-center"><span class="text-violet-600 mr-2">✓</span> 250,000 AI Executions / mo</li>
+                        <li class="flex items-center"><span class="text-violet-600 mr-2">✓</span> Unlimited Workflows</li>
+                        <li class="flex items-center"><span class="text-violet-600 mr-2">✓</span> Dedicated Webhooks & Priority Support</li>
+                    </ul>
+                </div>
+                <button class="w-full py-2.5 bg-gradient-to-r from-violet-600 to-violet-500 hover:from-violet-700 hover:to-lime-500 text-white text-xs font-medium rounded-lg transition shadow-md shadow-violet-500/20">Join Pro</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-violet-100/80 text-center text-xs text-slate-500">
+        <p>© 2026 AuraAI Template. Designed for high-converting SaaS launches.</p>
+    </footer>
+
+</body>
+</html>
